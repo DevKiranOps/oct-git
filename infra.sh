@@ -7,4 +7,6 @@ echo "Creating Resource Group :$RESOURCE_GROUP"
 az group create --name $RESOURCE_GROUP --location $REGION
 
 
-az network create --name $VNET_NAME --cidr-block $VNET_CIDR 
+az network vnet create --name $VNET_NAME \
+                       --resource-group $RESOURCE_GROUP 
+                       --cidr-block $VNET_CIDR
