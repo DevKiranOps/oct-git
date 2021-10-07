@@ -12,7 +12,7 @@ az network vnet create --name $VNET_NAME \
                        --cidr-block $VNET_CIDR
 
 
-az vm create --name $VM_NAME --resource-group $RESOURCE_GROUP --location eastus
+az vm create --name $FIRST_VM_NAME --resource-group $RESOURCE_GROUP --location eastus
 
 
-az vm create --name secondvm --resoruce-group $RESOURCE_GROUP --location westus
+az vm create --name $SECOND_VM_NAME --resoruce-group $RESOURCE_GROUP --location westus
