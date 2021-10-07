@@ -16,9 +16,12 @@ az network vnet subnet creat --name $SUBNET_NAME \
                              --address-prefix $web_subnet_cidr \
                              --vnet-name $VNET_NAME
 
+
 az vm create --name $FIRST_VM_NAME --resource-group $RESOURCE_GROUP --location eastus
-
-
 az vm create --name $SECOND_VM_NAME --resoruce-group $RESOURCE_GROUP --location westus
+
+
+
+
 
 
