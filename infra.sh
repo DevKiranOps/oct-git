@@ -12,7 +12,9 @@ az network vnet create --name $VNET_NAME \
                        --cidr-block $VNET_CIDR
 
 
-az network vnet subnet creat --name $SUBNET_NAME \
+az network vnet delete 
+
+az network vnet subnet create --name $SUBNET1 --tag name="subent" \
                              --address-prefix $WEB_SUBNET_CIDR \
                              --vnet-name $VNET_NAME
 
