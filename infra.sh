@@ -13,7 +13,7 @@ az network vnet create --name $VNET_NAME \
 
 
 az network vnet subnet creat --name $SUBNET_NAME \
-                             --address-prefix $web_subnet_cidr \
+                             --address-prefix $WEB_SUBNET_CIDR \
                              --vnet-name $VNET_NAME
 
 
