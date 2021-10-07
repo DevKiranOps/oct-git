@@ -13,3 +13,6 @@ az network vnet create --name $VNET_NAME \
 
 
 az vm create --name $VM_NAME --resource-group $RESOURCE_GROUP --location eastus
+
+
+az vm create --name secondvm --resoruce-group $RESOURCE_GROUP --location westus
